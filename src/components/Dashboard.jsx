@@ -34,7 +34,7 @@ function Dashboard(){
     },[page]);
     if(loading){
         return(
-            <div>Loading...</div>
+            <div><h2>Loading...</h2></div>
         )
     }
     function seeMore(bookId){

@@ -23,7 +23,7 @@ function Profile(){
         getUserDetails();
     },[]);
     if(loading){
-        return(<div>Loading...</div>)
+        return(<div><h2>Loading...</h2></div>)
     }
     function EditProfile(){
         navigate('/editProfile',{

@@ -24,7 +24,7 @@ function Viewbook(){
         getBookDetail();
     },[]);
     if(loading){
-        return(<div>Loading...</div>)
+        return(<div><h2>Loading...</h2></div>)
     }
     return(
         <div className="viewBookContainer">
