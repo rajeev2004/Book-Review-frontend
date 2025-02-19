@@ -16,6 +16,10 @@ A full-stack book review platform where users can browse books and leave reviews
 - **Styling**: CSS for styling the application.
 - **Libraries**: Axios for API communication, React Router for navigation.
 
+## Link
+
+- **Backend Repository**: https://github.com/rajeev2004/Book-Review-backend
+
 ## Setup Instructions
 
 1. Clone both the repository separately:
