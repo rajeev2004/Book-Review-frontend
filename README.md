@@ -18,7 +18,7 @@ A full-stack book review platform where users can browse books and leave reviews
 
 ## Setup Instructions
 
-1. Clone both the repository:
+1. Clone both the repository separately:
    ```sh
    git clone https://github.com/rajeev2004/Book-Review-frontend.git
    cd Book-Review-frontend
@@ -35,7 +35,7 @@ A full-stack book review platform where users can browse books and leave reviews
     ```bash
     npm run dev
 
-5. Set up a `.env` file:
+5. Set up a `.env` file in the backend repository:
    Add the following environment variables:
    ```sh
    DATABASE_URL=your_postgresql_connection_string
