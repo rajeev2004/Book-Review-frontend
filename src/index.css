@@ -1,0 +1,205 @@
+.form{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  height: 100vh;
+  flex-wrap: wrap;
+  animation: tween 0.5s ease-in-out;
+}
+select{
+  border-radius: 10px;
+}
+.buttonclass{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+input,button,textarea{
+  padding: 10px 12px;
+  border-radius: 10px;
+  font-size: 16px;
+}
+input{
+  border: 1px solid black;
+}
+button{
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #0056D2;
+  border: none;
+  color: white;
+}
+input:focus{
+  border: 2px blue solid;
+  outline: none;
+}
+textarea:focus{
+  border: 2px blue solid;
+  outline: none;
+}
+button:hover{
+  transform: scale(1.1);
+  background-color: #004bb5;
+}
+.header{
+  margin: 10px 10px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  animation: tween 0.5s ease-in-out;
+}
+@keyframes tween{
+  from{
+      opacity: 0;
+      transform: translateY(+20px);
+  }
+  to{
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+.bookList{
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.bookDashboardContainer,.bookDashboardContainerDetail,.bookDashboardContainerButton{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.paginationButton{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 12px 20px;
+}
+button:disabled{
+  background-color: gray !important;
+}
+.bookDashboardContainer{
+  padding: 10px;
+  border: 1px black solid;
+  border-radius: 10px;
+  flex: 1 1 250px;
+  height: 350px;
+}
+p{
+  margin: 0;
+  font-size: 18px;
+  word-wrap: break-word;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+h2:hover{
+  text-decoration: underline;
+}
+.message{
+  color: red;
+  text-align: center;
+  margin-top: 30px;
+}
+.viewBookContainer{
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  flex-direction: column;
+  gap: 15px;
+}
+.viewBookContainerChild{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  border: 1px black solid;
+  border-radius: 10px;
+}
+.viewBookContainerDetail{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.allReviews{
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+.reviewContainer{
+  display: flex;
+  justify-content: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  flex-wrap: wrap;
+  border: 1px black solid;
+  padding: 10px;
+  border-radius: 10px;
+  flex: 1 1 300px;
+  height: 200px;
+}
+.reviewHeader{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.rating{
+  display: flex;
+  flex-wrap: wrap;
+}
+.review{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.review label{
+  width: 100px;
+  text-align: left;
+}
+.review textarea{
+  flex: 1;
+}
+.profileContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  margin-top: 35px;
+  flex-wrap: wrap;
+}
+.profileDetail{
+  display: flex;
+  flex-direction: 15px;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.editContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 35px;
+}
+.formChild{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.formChild label{
+  width: 100px;
+  text-align: left;
+}
+.formChild input{
+  flex: 1;
+}
