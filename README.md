@@ -20,38 +20,48 @@ A full-stack book review platform where users can browse books and leave reviews
 
 - **Backend Repository**: https://github.com/rajeev2004/Book-Review-backend
 
-## Setup Instructions
+## **Setup Instructions**
 
-1. Clone both the repository separately:
-   ```sh
-   git clone https://github.com/rajeev2004/Book-Review-frontend.git
-   cd Book-Review-frontend
+### **Backend Setup**
+1. Clone the repository:
+   ```bash
    git clone https://github.com/rajeev2004/Book-Review-backend.git
    cd Book-Review-backend
+
+2. Install dependencies:
+   ```bash
+   npm install
+
+3. Create a .env file and add the following environment variables: 
+    ```bash
+    DATABASE_URL=your_database_url
+    SECRET_KEY=your_jwt_secret
+    INVITE_CODE=your_admin_code
+
+4. Start the backend server (ensure the database is set up):
+    ```bash
+    node server.js
+
+### **Frontend Setup**
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/rajeev2004/Book-Review-frontend.git
+   cd Book-Review-frontend
 
 2. Install dependencies:
     ```bash
     npm install
 
-3. Configure the backend URL in the frontend code (e.g., the backend constant in the Dashboard.jsx file).
+3. Update the backend URL in the frontend:
+    Open each .jsx file where the backend URL is defined and update the backend constant to use the local server URL:
+    ```bash
+    const backend = "http://localhost:5000";
 
-4. Start the development server:
+4. Start the frontend development server:
     ```bash
     npm run dev
 
-5. Set up a `.env` file in the backend repository:
-   Add the following environment variables:
-   ```sh
-   DATABASE_URL=your_postgresql_connection_string
-   PORT=5000
-   SECRET_KEY=your_jwt_secret_key
-   INVITE_CODE=admin_invite_code
-
-6. Run the backend server (ensure the database is set up):
-    ```bash
-    node server.js
-
-7. Access the application at http://localhost:5173
+5. Access the application at http://localhost:5173
 
 ## Demo
 
